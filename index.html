@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="i.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="sectionhome">
+        <div class="bg-conatainer d-flex flex-column justify-content-end">
+            <div class="card">
+                <h1 class="heading">DC SuperHeros</h1>
+                <p class="paragraph">Here you can find about your Superheros</p>
+                <button class="button align-self-center" onclick="display('sectionfavouritesuperheros')">Explore</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionfavouritesuperheros">
+        <div class="bg-container">
+            <h1 class="page-heading"> Favourite Superheros</h1>
+            <div class="favourite-superhero-container d-flex flex-row" onclick="display('sectionSuperMandetailedview')">
+                <div>
+                    <h1 class="container1-heading">SuperMan</h1>
+                    <p class="container1-description">Superman is an allien who came to earth from a plannet called Krypton when he was a child. His Kryptonian plnnet was destryed during wars</p>
+                </div>
+                <img src="https://posterspy.com/wp-content/uploads/2019/09/Superman-Portrait-small.jpg" class="container1-image" />
+            </div>
+            <div class="favourite-superhero-container d-flex flex-row" onclick="display('sectionBatMandetailedview')">
+                <div>
+                    <h1 class="container1-heading">BatMan</h1>
+                    <p class="container1-description">Batman is a guy who was born at waynes family, his real name is "Bruce Wayne" . He became batman to clear his gotham city from criminals.</p>
+                </div>
+                <img src="https://i.pinimg.com/736x/dc/35/6e/dc356ea82058a8a5ea1a43521ced4ad6.jpg" class="container1-image" />
+            </div>
+            <div class="favourite-superhero-container d-flex flex-row" onclick="display('sectionAquaMandetailedview')">
+                <div>
+                    <h1 class="container1-heading">AquaMan</h1>
+                    <p class="container1-description">AquaMan was born to the queen of Atlantis fell in love with a normal men , but aquaman has all the powers to control tridents and sea as his mother.</p>
+                </div>
+                <img src="https://i.pinimg.com/originals/38/e9/0d/38e90dc4ac6080f3d814e8abdb68e91e.jpg" class="container1-image" />
+            </div>
+            <div class="favourite-superhero-container d-flex flex-row" onclick="display('sectionWonderWomandetailedview')">
+                <div>
+                    <h1 class="container1-heading">Wonderwoman</h1>
+                    <p class="container1-description">She was born the hidden island of Amazon and posses great powers compared to humans and also has great battle skills. She left the Amazon island after she fell in love with a man called Steeve.</p>
+                </div>
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/b5cdf0715349ce56b1fb6fbde657019659c1502bd174f78d3777a476818d7eaa._RI_V_TTW_.jpg" class="container1-image" />
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionhome')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionSuperMandetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed-View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://wallpapercave.com/wp/wp9330130.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpapercave.com/wp/wp5143132.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpapercave.com/wp/wp6926447.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container ">
+                    <h1 class="detailed-view-card-heading ">Super Man</h1>
+                    <p class="detailed-view-card-description ">Superman, the iconic superhero from DC Comics, hails from the planet Krypton.
+                        Under Earth's yellow sun, he possesses extraordinary powers like super strength,
+                        flight, and heat vision. As Clark Kent, he lives among humans, using his abilities
+                        to protect the innocent and fight for justice, truth, and hope. A symbol of
+                        strength, resilience, and compassion. 🦸‍♂️✨
+                        You would also like to know his hidden abilities.
+
+                    </p>
+                    <ul class="detailed-view-card-description">
+                        <li>Manipulation through eyes</li>
+                        <li>See through Humans</li>
+                        <li>Hearing Power</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionfavouritesuperheros')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionBatMandetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed-View</h1>
+            <div class="detailed-view-card-container">
+                <div id="batmancarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#batmancarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#batmancarousel" data-slide-to="1"></li>
+                        <li data-target="#batmancarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://e0.pxfuel.com/wallpapers/961/166/desktop-wallpaper-batman-v-superman-dawn-of-justice-trailer-do-you-bleed-you-will-ben-affleck-batman-costume.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.hdqwalls.com/wallpapers/the-batman-robert-pattinson-movie-f0.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.hdwallpapers.in/download/batman_bruce_wayne_dc_comics_robert_pattinson_hd_the_batman-HD.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#batmancarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#batmancarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container ">
+                    <h1 class="detailed-view-card-heading ">Bat Man</h1>
+                    <p class="detailed-view-card-description ">Batman, DC Comics' dark knight, is billionaire Bruce Wayne by day.
+                        He transforms into Gotham City's vigilante, using his intelligence, martial arts skills, and high-tech
+                        gadgets to combat crime. Driven by the trauma of witnessing his parents' murder, he seeks justice from the
+                        shadows, symbolizing resilience and determination. 🦇💼
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionfavouritesuperheros')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionAquaMandetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed-View</h1>
+            <div class="detailed-view-card-container">
+                <div id="aquamancarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#aquamancarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#aquamancarousel" data-slide-to="1"></li>
+                        <li data-target="#aquamancarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://hdqwalls.com/download/aquaman-2018-movie-5k-kv-1920x1080.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images7.alphacoders.com/133/1339210.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://a-static.besthdwallpaper.com/aquaman-and-the-lost-kingdom-wallpaper-3554x1999-99404_53.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#aquamancarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#aquamancarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container ">
+                    <h1 class="detailed-view-card-heading ">Aqua Man</h1>
+                    <p class="detailed-view-card-description ">Aquaman, king of Atlantis and DC Comics hero, is Arthur Curry.
+                        Born of an Atlantean mother and human father, he commands the ocean and marine life. With superhuman
+                        strength, aquatic abilities, and the trident of Poseidon, he protects both land and sea, balancing two
+                        worlds and their conflicts. 🌊🧜‍♂️
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionfavouritesuperheros')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionWonderWomandetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed-View</h1>
+            <div class="detailed-view-card-container">
+                <div id="wonderwomancarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#wonderwomancarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#wonderwomancarousel" data-slide-to="1"></li>
+                        <li data-target="#wonderwomancarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://wallpapercave.com/wp/wp3015394.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpapercave.com/wp/wp2771929.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.hdqwalls.com/download/wonder-woman-1984-movie-art-4k-3r-2048x1152.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#wonderwomancarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#wonderwomancarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container ">
+                    <h1 class="detailed-view-card-heading ">Wonder Woman</h1>
+                    <p class="detailed-view-card-description ">Wonder Woman, DC Comics' Amazonian warrior, is Diana of Themyscira.
+                        Gifted with superhuman strength, agility, and the Lasso of Truth, she champions peace and justice. As an
+                        ambassador to the world of men, she balances her fierce warrior spirit with compassion and wisdom, fighting
+                        tirelessly for equality and love. 🌟🗡️
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionfavouritesuperheros')">Back</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
